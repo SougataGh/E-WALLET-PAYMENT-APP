@@ -15,9 +15,10 @@ protected:
     std::string passcode;
 public:
     virtual void set_user(const std::string &,const std::string &,const std::string &);
-    virtual std::string get_user_name() const;
-    virtual std::string get_ph_no() const;
-    virtual std::string get_passcode() const;
+    inline virtual std::string get_user_name() const;
+    inline virtual std::string get_ph_no() const;
+    inline 
+virtual std::string get_passcode() const;
     friend std::ostream& operator<<(std::ostream&,User&);
 };
 
