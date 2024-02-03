@@ -17,8 +17,7 @@ public:
     virtual void set_user(const std::string &,const std::string &,const std::string &);
     inline virtual std::string get_user_name() const;
     inline virtual std::string get_ph_no() const;
-    inline 
-virtual std::string get_passcode() const;
+    inline virtual std::string get_passcode() const;
     friend std::ostream& operator<<(std::ostream&,User&);
 };
 
