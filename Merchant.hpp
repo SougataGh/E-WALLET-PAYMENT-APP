@@ -11,6 +11,6 @@ class Merchant : public User,public Reward_Cashback
 {
 public:
     void set_user(const std::string&,const std::string&,const std::string&);
-    double get_criteria_amount() const;
+    inline double get_criteria_amount() const;
 };
 #endif // MERCHANT_H_INCLUDED
