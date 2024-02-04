@@ -9,7 +9,7 @@ void Wallet::add_money(const double &amount)
         std::cout<<"INVALID AMOUNT....FAILED TO CREDIT THE ACCOUNT!.....\n\n";
         return;
     }
-    balance+=amount;
+    balance-=amount;
 }
 void Wallet::extract_money(const double &amount)
 {
