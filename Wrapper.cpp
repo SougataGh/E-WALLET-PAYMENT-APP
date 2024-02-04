@@ -57,7 +57,7 @@ void Wrapper::make_payment()
     }
     std::cout<<"ENTER YOUR PASSCODE : ";
     std::cin>>sender_passcode;
-    if(users.find(sender_passcode)==users.end())
+    if(users[sender_ph_no].get_passcode()!=sender_passcode)
     {
         std::cout<<"INVALID PASSCODE.....\n\n";
         return;
