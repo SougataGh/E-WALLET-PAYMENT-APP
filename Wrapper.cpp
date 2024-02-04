@@ -47,12 +47,12 @@ void Wrapper::make_payment()
     }
     std::string sender_ph_no,sender_passcode;
     std::cout<<"ENTER YOUR PHONE NUMBER : ";
+    std::cin>>sender_ph_no;
     if(users.find(sender_ph_no)==users.end())
     {
         std::cout<<"NO ACCOUNT EXIST ON THIS NUMBER....\n\n";
         return;
     }
-    std::cin>>sender_ph_no;
     std::cout<<"ENTER YOUR PASSCODE : ";
     std::cin>>sender_passcode;
     if(users.find(sender_passcode)==users.end())
