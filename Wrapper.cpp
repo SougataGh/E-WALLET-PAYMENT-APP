@@ -38,12 +38,14 @@ void Wrapper::create_merchant_account()
     m_user.add_money(amount);
     m_user.set_transaction_info(amount,"-INITIAL BALANCE");
     merchant_users.insert({ph_no,m_user});
+    std::cout<<"YOUR MERCHANT ACCOUNT CREATED SUCESSFULY.....\n\n";
 }
 void Wrapper::make_payment()
 {
     if(users.size()==0)
     {
         std::cout<<"NO ACCOUNT BEEN CRETAED YET : ";
+        return;
     }
     std::string sender_ph_no,sender_passcode;
     std::cout<<"ENTER YOUR PHONE NUMBER : ";
