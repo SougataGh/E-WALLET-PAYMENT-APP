@@ -32,11 +32,6 @@ void Wrapper::create_merchant_account()
     std::cin>>passcode;
     Merchant m_user;
     m_user.set_user(user_name,ph_no,passcode);
-    std::cout<<"ENTER THE INITIAL AMOUNT YOU WANT TO CREDITED IN YOUR ACCOUNT : ";
-    double amount;
-    std::cin>>amount;
-    m_user.add_money(amount);
-    m_user.set_transaction_info(amount,"-INITIAL BALANCE");
     merchant_users.insert({ph_no,m_user});
     std::cout<<"YOUR MERCHANT ACCOUNT CREATED SUCESSFULY.....\n\n";
 }
