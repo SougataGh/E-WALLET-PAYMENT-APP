@@ -7,9 +7,7 @@
 
 void Merchant::set_user(const std::string &user_name,const std::string &ph_no,const std::string &passcode)
 {
-    this->user_name=user_name;
-    this->ph_no=ph_no;
-    this->passcode=passcode;
+    User::set_user(user_name,ph_no,passcode);
     std::cout<<"ENTER THE CREDITED MONEY FOR WHICH YOU WANT TO GIVE CASHBACK : ";
     double amount;
     std::cin>>amount;
